@@ -119,18 +119,18 @@ export default function WebcamCapture({
           className="w-full h-full object-cover"
         />
       )}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+      <div className="absolute top-8 left-1/2 transform -translate-x-1/2">
         {!capturedImage ? (
           <button
             onClick={captureImage}
-            className="bg-blue-500 transition hover:bg-blue-700 text-white font-bold  py-2 px-4 rounded-full"
+            className="bg-blue-500 transition hover:underline text-white font-bold  py-2 px-4 rounded-full"
           >
             Take photo
           </button>
         ) : (
           <button
             onClick={handleRetake}
-            className="bg-blue-700 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded-full transition"
+            className="bg-blue-700 hover:bg-blue-900 underline text-white font-bold py-2 px-4 rounded-full transition"
           >
             Retake
           </button>
