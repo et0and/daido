@@ -68,7 +68,7 @@ export default function WebcamCapture({
         canvas.height = video.videoHeight;
 
         // Calculate zoom factor (e.g., 4x zoom)
-        const zoomFactor = 4;
+        const zoomFactor = 6;
         const zoomedSize = Math.min(canvas.width, canvas.height) / zoomFactor;
 
         // Calculate center point for zooming
