@@ -68,7 +68,7 @@ export default function WebcamCapture({
         canvas.height = video.videoHeight;
 
         // Calculate zoom factor (e.g., 4x zoom)
-        const zoomFactor = 6;
+        const zoomFactor = 4;
         const zoomedSize = Math.min(canvas.width, canvas.height) / zoomFactor;
 
         // Calculate center point for zooming
@@ -110,13 +110,13 @@ export default function WebcamCapture({
           autoPlay
           playsInline
           muted
-          className="w-full h-full object-cover filter grayscale"
+          className="w-full h-full object-cover filter grayscale contrast-200"
         />
       ) : (
         <img
           src={capturedImage}
           alt="Captured"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover contrast-200"
         />
       )}
       <div className="absolute top-8 left-1/2 transform -translate-x-1/2">
